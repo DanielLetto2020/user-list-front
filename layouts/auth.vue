@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    login layout
+  <div class="container h-100">
     <nuxt/>
   </div>
 </template>

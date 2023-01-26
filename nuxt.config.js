@@ -87,7 +87,10 @@ export default {
 
   auth: {
     localStorage: false,
-    redirect: {},
+    redirect: {
+      // login: '/',
+      // logout: '/login'
+    },
     resetOnError: true,
     rewriteRedirects: true,
     fullPathRedirect: true,
@@ -98,9 +101,18 @@ export default {
         endpoints: {
           login: {url: '/login', method: 'post', propertyName: 'token'},
           logout: {url: '/logout', method: 'post'},
-          user: {url: '/user', method: 'get', propertyName: 'data'}
+          user: {url: '/self-user', method: 'get', propertyName: 'data'}
         }
-      }
+      },
+      registerAuth: {
+        _scheme: "local",
+        tokenType: "Bearer",
+        endpoints: {
+          login: { url: "/register", method: "post", propertyName: "token" },
+          logout: { url: "/logout", method: "post" },
+          user: { url: "/self-user", method: "get", propertyName: "data" },
+        },
+      },
     },
     plugins: [
       {src: '~plugins/auth-callback', mode: 'client'}

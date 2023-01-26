@@ -31,7 +31,7 @@ export default async function ({app, store, $auth, redirect}, inject) {
     // app.$socket.connector.options.auth.headers['Authorization'] = '';
     // store.commit('m_role_admin', false);
     // store.commit('m_role_user', false);
-    // app.router.push("/login")
+    app.router.push("/login")
     console.log('let onLogout')
   };
 
