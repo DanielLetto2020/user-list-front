@@ -17,10 +17,10 @@
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
-    "v-click-outside": "^3.2.0"
-  },
-  "devDependencies": {
+    "v-click-outside": "^3.2.0",
     "sass": "^1.57.1",
     "sass-loader": "^10.4.1"
+  },
+  "devDependencies": {
   }
 }
